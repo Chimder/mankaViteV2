@@ -1,6 +1,7 @@
 import path from 'path'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import checker from 'vite-plugin-checker'
 
 export default defineConfig({
   plugins: [
@@ -9,6 +10,7 @@ export default defineConfig({
     //     plugins: [['babel-plugin-react-compiler']],
     //   },
     // }),
+    checker({ typescript: false }),
     react(),
   ],
   base: '/',
