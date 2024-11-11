@@ -3,9 +3,9 @@ import Axios, { AxiosError, AxiosRequestConfig } from 'axios'
 const URL = import.meta.env.VITE_IMG_PROXY!
 
 export const AXIOS_INSTANCE = Axios.create({
-  baseURL: URL,
+  // baseURL: URL,
   // baseURL: 'http://localhost:8080',
-  // baseURL: 'https://mankaproxy-production.up.railway.app',
+  baseURL: 'https://mankaproxy-production.up.railway.app',
   headers: {
     'Content-Type': 'application/json',
     'Accept': '*/*',

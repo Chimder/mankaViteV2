@@ -93,7 +93,8 @@ function Chapter() {
           <img
             // src={`http://localhost:8080/img/${chapters.baseUrl}/data/${chapters.chapter?.hash}/${chapter}`}
 
-            src={`${import.meta.env.VITE_IMG_PROXY}/img/${chapters.baseUrl}/data/${chapters.chapter?.hash}/${chapter}`}
+            src={`${import.meta.env.VITE_IMG_PROXY}?url=${encodeURIComponent(`${chapters.baseUrl}/data/${chapters.chapter?.hash}/${chapter}`)}`}
+            // src={`${import.meta.env.VITE_IMG_PROXY}/img/${chapters.baseUrl}/data/${chapters.chapter?.hash}/${chapter}`}
             loading="lazy"
             alt="Manga page"
             onLoad={() => handleImageLoad(index)}
