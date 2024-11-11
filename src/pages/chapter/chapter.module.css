@@ -1,0 +1,41 @@
+.chap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.chapImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.current {
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+
+/* .skeleton {
+  width: 1200px;
+  height: 800px;
+  padding: 20px 0;
+  margin: auto;
+} */
+.navigateChapterBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 34px 0;
+  color: black;
+  text-decoration: none;
+  background-color: aliceblue;
+  border: 1px solid black;
+
+  border-radius: 5px;
+}
